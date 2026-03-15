@@ -30,65 +30,69 @@ public class snake extends Canvas implements Runnable {
     int w = 20;
     int h = 20;
     
+	
+	
     int s1x = 999;
     int s1y = 999;
-    
     int s2x = 999;
     int s2y = 999;
-    
     int s3x = 999;
     int s3y = 999;
-    
     int s4x = 999;
     int s4y = 999;
-    
     int s5x = 999;
     int s5y = 999;
-    
     int s6x = 999;
     int s6y = 999;
-    
     int s7x = 999;
     int s7y = 999;
-    
     int s8x = 999;
     int s8y = 999;
-    
     int s9x = 999;
     int s9y = 999;
-    
     int s10x = 999;
     int s10y = 999;
-
     int s11x = 999;
     int s11y = 999;
-    
     int s12x = 999;
     int s12y = 999;
-    
     int s13x = 999;
     int s13y = 999;
-    
     int s14x = 999;
     int s14y = 999;
-    
     int s15x = 999;
     int s15y = 999;
-    
     int s16x = 999;
     int s16y = 999;
-    
     int s17x = 999;
     int s17y = 999;
-    
     int s18x = 999;
     int s18y = 999;
-    
     int s19x = 999;
     int s19y = 999;
-    
-    int s20x = 999;
-    int s20y = 999;
+	int s20x = 999;
+	int s20y = 999;
+	
+int s21x = 999; int s21y = 999;
+int s22x = 999; int s22y = 999;
+int s23x = 999; int s23y = 999;
+int s24x = 999; int s24y = 999;
+int s25x = 999; int s25y = 999;
+int s26x = 999; int s26y = 999;
+int s27x = 999; int s27y = 999;
+int s28x = 999; int s28y = 999;
+int s29x = 999; int s29y = 999;
+int s30x = 999; int s30y = 999;
+int s31x = 999; int s31y = 999;
+int s32x = 999; int s32y = 999;
+int s33x = 999; int s33y = 999;
+int s34x = 999; int s34y = 999;
+int s35x = 999; int s35y = 999;
+int s36x = 999; int s36y = 999;
+int s37x = 999; int s37y = 999;
+int s38x = 999; int s38y = 999;
+int s39x = 999; int s39y = 999;
+int s40x = 999; int s40y = 999;
 
     int bx=ThreadLocalRandom.current().nextInt(1, 10) * 20;
     int by=ThreadLocalRandom.current().nextInt(1, 10) * 20;
@@ -198,6 +202,7 @@ public class snake extends Canvas implements Runnable {
             
             
             drawRect(px, py, w, h, 0x00ff00);
+			
             drawRect(s1x, s1y, w, h, 0x00ff00);
             drawRect(s2x, s2y, w, h, 0x00ff00);
             drawRect(s3x, s3y, w, h, 0x00ff00);
@@ -218,6 +223,28 @@ public class snake extends Canvas implements Runnable {
             drawRect(s18x, s18y, w, h, 0x00ff00);
             drawRect(s19x, s19y, w, h, 0x00ff00);
             drawRect(s20x, s20y, w, h, 0x00ff00);
+			drawRect(s21x, s21y, w, h, 0x00ff00);
+            drawRect(s22x, s22y, w, h, 0x00ff00);
+            drawRect(s23x, s23y, w, h, 0x00ff00);
+            drawRect(s24x, s24y, w, h, 0x00ff00);
+            drawRect(s25x, s25y, w, h, 0x00ff00);
+            drawRect(s26x, s26y, w, h, 0x00ff00);
+            drawRect(s27x, s27y, w, h, 0x00ff00);
+            drawRect(s28x, s28y, w, h, 0x00ff00);
+            drawRect(s29x, s29y, w, h, 0x00ff00);
+            drawRect(s30x, s30y, w, h, 0x00ff00);
+            drawRect(s31x, s31y, w, h, 0x00ff00);
+            drawRect(s32x, s32y, w, h, 0x00ff00);
+            drawRect(s33x, s33y, w, h, 0x00ff00);
+            drawRect(s34x, s34y, w, h, 0x00ff00);
+            drawRect(s35x, s35y, w, h, 0x00ff00);
+            drawRect(s36x, s36y, w, h, 0x00ff00);
+            drawRect(s37x, s37y, w, h, 0x00ff00);
+            drawRect(s38x, s38y, w, h, 0x00ff00);
+            drawRect(s39x, s39y, w, h, 0x00ff00);
+            drawRect(s40x, s40y, w, h, 0x00ff00);
+			
+			
             drawRect(bx, by, w, h, 0xff0000);
             
             
@@ -346,6 +373,106 @@ public class snake extends Canvas implements Runnable {
                 s20y=py;
                 turn = turn + 1;
             }
+			            else if(level >= 21 && turn==21){
+                s21x=px;
+                s21y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 22 && turn==22){
+                s22x=px;
+                s22y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 23 && turn==23){
+                s23x=px;
+                s23y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 24 && turn==24){
+                s24x=px;
+                s24y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 25 && turn==25){
+                s25x=px;
+                s25y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 26 && turn==26){
+                s26x=px;
+                s26y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 27 && turn==27){
+                s27x=px;
+                s27y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 28 && turn==28){
+                s28x=px;
+                s28y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 29 && turn==29){
+                s29x=px;
+                s29y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 30 && turn==30){
+                s30x=px;
+                s30y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 31 && turn==31){
+                s31x=px;
+                s31y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 32 && turn==32){
+                s32x=px;
+                s32y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 33 && turn==33){
+                s33x=px;
+                s33y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 34 && turn==34){
+                s34x=px;
+                s34y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 35 && turn==35){
+                s35x=px;
+                s35y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 36 && turn==36){
+                s36x=px;
+                s36y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 37 && turn==37){
+                s37x=px;
+                s37y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 38 && turn==38){
+                s38x=px;
+                s38y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 39 && turn==39){
+                s39x=px;
+                s39y=py;
+                turn = turn + 1;
+            }
+            else if(level >= 40 && turn==40){
+                s40x=px;
+                s40y=py;
+                turn = turn + 1;
+            }
             else{
                 turn=1;
                 s1x=px;
@@ -379,9 +506,9 @@ if((s1x == px && s1y == py) ||
 (s17x == px && s17y == py) ||
 (s18x == px && s18y == py) ||
 (s19x == px && s19y == py) ||
-(s20x == px && s20y == py)){
+(s20x == px && s20y == py) || (s21x == px && s21y == py) || (s22x == px && s22y == py) || (s23x == px && s23y == py) || (s24x == px && s24y == py) || (s25x == px && s25y == py) || (s26x == px && s26y == py) || (s27x == px && s27y == py) || (s28x == px && s28y == py) || (s29x == px && s29y == py) || (s30x == px && s30y == py) || (s31x == px && s31y == py) || (s32x == px && s32y == py) || (s33x == px && s33y == py) || (s34x == px && s34y == py) || (s35x == px && s35y == py) || (s36x == px && s36y == py) || (s37x == px && s37y == py) || (s38x == px && s38y == py) || (s39x == px && s39y == py) || (s40x == px && s40y == py)){
 
-s1x = 999;
+	s1x = 999;
     s1y = 999;
     
     s2x = 999;
@@ -440,6 +567,66 @@ s1x = 999;
     
     s20x = 999;
     s20y = 999;
+	
+	s21x = 999;
+    s21y = 999;
+    
+    s22x = 999;
+    s22y = 999;
+    
+    s23x = 999;
+    s23y = 999;
+    
+    s24x = 999;
+    s24y = 999;
+    
+    s25x = 999;
+    s25y = 999;
+    
+    s26x = 999;
+    s26y = 999;
+    
+    s27x = 999;
+    s27y = 999;
+    
+    s28x = 999;
+    s28y = 999;
+    
+    s29x = 999;
+    s29y = 999;
+    
+    s30x = 999;
+    s30y = 999;
+
+    s31x = 999;
+    s31y = 999;
+    
+    s32x = 999;
+    s32y = 999;
+    
+    s33x = 999;
+    s33y = 999;
+    
+    s34x = 999;
+    s34y = 999;
+    
+    s35x = 999;
+    s35y = 999;
+    
+    s36x = 999;
+    s36y = 999;
+    
+    s37x = 999;
+    s37y = 999;
+    
+    s38x = 999;
+    s38y = 999;
+    
+    s39x = 999;
+    s39y = 999;
+    
+    s40x = 999;
+    s40y = 999;
 
     bx=ThreadLocalRandom.current().nextInt(1, 10) * 20;
     by=ThreadLocalRandom.current().nextInt(1, 10) * 20;
