@@ -486,7 +486,13 @@ int s40x = 999; int s40y = 999;
             if(dir=="down"){py=py+h;}
             if(dir=="right"){px=px+w;}
             if(dir=="left"){px=px-w;}
-            
+
+	    if(px>=400){px=0;}
+	    else if(px<=0){px=400;}
+
+	    if(py>=400){py=0;}
+	    else if(py<=0){py=400;}
+
 if((s1x == px && s1y == py) ||
 (s2x == px && s2y == py) ||
 (s3x == px && s3y == py) ||
